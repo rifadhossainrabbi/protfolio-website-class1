@@ -4,7 +4,9 @@
   box-sizing: border-box;
 }
 
-body {}
+body {
+
+}
 
 /* Shared style */
 .font-open-sans {
@@ -21,6 +23,11 @@ body {}
   font-size: 20px;
   font-weight: bold;
   cursor: pointer;
+  display: inline-block;
+}
+
+.text-center{
+  text-align: center;
 }
 
 .section-heading {
@@ -46,7 +53,7 @@ header {
   background-color: #FFF8F3;
   padding-top: 50px;
   background: url('../images/developer.png'), url('../images/header_bg.png'), #FFF8F3;
-  background-position: top left, bottom right;
+  background-position: 23px 38px, bottom right;
   background-repeat: no-repeat;
 }
 
@@ -122,7 +129,9 @@ nav .menu a {
 } dite hoy*/
 }
 
-#about {
+#about,
+#skills,
+#resume {
   padding-top: 130px;
 }
 
@@ -152,10 +161,6 @@ nav .menu a {
 
 /* Skill boxes */
 
-#skills {
-  padding-top: 130px;
-}
-
 .skills-container {
   width: 71%;
   max-width: 1140px;
@@ -180,14 +185,90 @@ nav .menu a {
   margin-bottom: 30px;
 }
 
-.skill-card h3 {
+#resume .resume-container {
+  width: 71%;
+  max-width: 1140px;
+  margin: 113px auto 0;
+  display: flex;
+  gap: 24px;
+}
+
+#resume .resume-container hr{
+  margin: 30px 0;
+}
+
+#resume .resume-container .seciton-title {
+  color: #474747;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.resume-card {
+  max-width: 511px;
+  margin-right: 47px;
+}
+
+.resume-card .card-title {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #474747;
+}
+
+.resume-card .card-title .card-info {
   font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #757575;
+}
+
+.resume-card .card-title .card-info {
+  font-size: 16px;
+  line-height: 28px;
+  margin-bottom: 20px;
+  color: #757575;
+}
+
+footer{
+  margin-top: 130px;
+  background-color: #FFF8F3;
+  padding: 130px 0;
+}
+
+footer .footer-container{
+  width: 71%;
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  gap: 116px;
+}
+
+footer .footer-container .social{
+  max-width: 562px;
+}
+
+.footer-container h2{
   color: #181818;
+  font-size: 35px;
   margin-bottom: 20px;
 }
 
-.skill-card p {
-  font-size: 16px;
-  color: #757575;
-  line-height: 28px;
+footer .footer-container .social p{
+ color: #474747;
+ line-height: 28px;
+ margin-bottom: 30px;
 }
+
+footer .footer-container .icons a {
+ margin-right: 24px;
+} 
+
+.footer-container form input[type="text"] , .footer-container form textarea {
+ width: 461px;
+ padding: 18px 31px;
+ margin-bottom: 24px;
+ border: none;
+ border-radius: 5px;
+ color: #757575;
+}
+
